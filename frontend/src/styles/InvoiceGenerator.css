@@ -1,0 +1,25 @@
+ 
+.invoice-page { padding: 40px 0; background: var(--bg-light); min-height: 90vh; }
+.invoice-controls { margin-bottom: 20px; display: flex; justify-content: flex-end; }
+.invoice-paper { background: white; padding: 50px; border-radius: 8px; box-shadow: 0 4px 20px rgba(0,0,0,0.05); max-width: 900px; margin: 0 auto; }
+.invoice-header { display: flex; justify-content: space-between; border-bottom: 2px solid #f0f0f0; padding-bottom: 30px; margin-bottom: 30px; }
+.invoice-meta h2 { font-size: 32px; font-weight: 800; color: var(--text-dark); margin-bottom: 8px; }
+.invoice-billing { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+.invoice-billing h3 { font-size: 14px; color: var(--text-gray); margin-bottom: 12px; text-transform: uppercase; }
+.input-inline { display: block; width: 100%; border: none; border-bottom: 1px dashed #ccc; padding: 8px 0; margin-bottom: 8px; font-family: inherit; font-size: 16px; outline: none; }
+.input-inline:focus { border-bottom-color: var(--primary-purple); }
+.invoice-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+.invoice-table th { text-align: left; padding: 12px; background: #f9fafb; font-size: 12px; text-transform: uppercase; color: var(--text-gray); }
+.invoice-table td { padding: 12px; border-bottom: 1px solid #f0f0f0; }
+.input-table { width: 100%; border: none; outline: none; font-family: inherit; font-size: 16px; background: transparent; }
+.input-table:focus { background: #f9fafb; }
+.text-right { text-align: right; }
+.text-center { text-align: center; }
+.invoice-totals { display: flex; justify-content: flex-end; margin-top: 30px; }
+.total-row { display: flex; justify-content: space-between; width: 250px; font-size: 20px; font-weight: 800; border-top: 2px solid var(--text-dark); padding-top: 16px; }
+.btn-danger { background: none; border: none; color: #ef4444; cursor: pointer; }
+@media print {
+  .no-print { display: none !important; }
+  .invoice-page { padding: 0; background: white; }
+  .invoice-paper { box-shadow: none; padding: 0; }
+}
